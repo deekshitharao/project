@@ -305,8 +305,8 @@ body {
   font-family: "Cabin", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #ffffff;
-  background-color: #108a93;
+  color: #693ae1;
+  background-color: #f5f5f5;
 }
 
 input,
@@ -421,7 +421,7 @@ cite {
 }
 
 .text-primary {
-  color: #ad1d28;
+  color: #f02685;
 }
 
 .text-warning {
@@ -483,7 +483,7 @@ h6 small,
 .h6 small {
   font-weight: normal;
   line-height: 1;
-  color: #bbbbbb;
+  color: #090909;
 }
 
 h1,
@@ -4699,8 +4699,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default {
-  background-color: #ad1d28;
-  border-color: #911821;
+  background-color: #693ae1;
+  border-color: #693ae1;
 }
 
 .navbar-default .navbar-brand {
@@ -4724,14 +4724,14 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #ffffff;
-  background-color: #d92432;
+  background-color: #693ae1;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #ffffff;
-  background-color: #d92432;
+  background-color:#693ae1;
 }
 
 .navbar-default .navbar-nav > .disabled > a,
@@ -5242,7 +5242,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  background-color: #ad1d28;
+  background-color: #050505;
   border-radius: 10px;
 }
 
@@ -5672,7 +5672,7 @@ a.list-group-item:focus {
 
 .panel {
   margin-bottom: 20px;
-  background-color: #13a0aa;
+  background-color: #5ffff0;
   border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -5832,21 +5832,21 @@ a.list-group-item:focus {
 }
 
 .panel-primary {
-  border-color: #ad1d28;
+  border-color: #f02685;
 }
 
 .panel-primary > .panel-heading {
   color: #ffffff;
-  background-color: #ad1d28;
-  border-color: #ad1d28;
+  background-color: #f02685;
+  border-color: hsl(334, 80%, 49%);
 }
 
 .panel-primary > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: #ad1d28;
+  border-top-color: #f02685;
 }
 
 .panel-primary > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #ad1d28;
+  border-bottom-color: #f02685;
 }
 
 .panel-success {
@@ -7231,7 +7231,7 @@ td.visible-print {
 }
 
 .navbar-brand {
-  font-family: 'Lobster', cursive;
+  font-family: 'sans-serif', cursive;
 }
 
 .btn .caret {
@@ -7252,7 +7252,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lobster', cursive;
+  font-family: 'cursive', cursive;
 }
 
 .text-primary {
@@ -7323,7 +7323,7 @@ legend {
 }
 
 .list-group-item {
-  background-color: #13a0aa;
+  background-color: #9ee7e3;
 }
 
 .popover {

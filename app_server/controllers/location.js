@@ -1,76 +1,76 @@
 module.exports.homelist = function(req, res) {
     res.render('location-list', {
-        title: 'Loc8r - find a place to work with wifi',
+        title: 'To-Do - check your to-dos for a better tomorrow',
         pageHeader: {
-            title: 'LOCATOR',
-            strapline: 'Find places to work with wifi near you!'
+            title: 'To-Do',
+            strapline: 'Check your reminders and work accordingly'
         },
-        sidebar: "Looking for wifi and a seat? Loc8r helps you find places to work when out and about. Perhaps with coffee, cake or a pint? Let Loc8r help you find the place you're looking for.",
+        sidebar: "To-Do reminds you to do your daily works on time!",
         locations: [{
-            name: 'Starbucks',
-            address: '125 High Street, Reading, RG6 1PS',
+            name: 'Homework',
+            address: 'Math homework 26 problems',
             rating: 3,
-            facilities: ['Hot drinks', 'Food', 'Premium wifi'],
-            distance: '100m'
+            facilities: ['deadline: 18 oct 2023', 'second hour'],
+            distance: '1 hour'
         }, {
-            name: 'Cafe Raasta',
-            address: '125 High Street, Reading, RG6 1PS',
+            name: 'Incomplete notes',
+            address: 'Science incomplete classwork 2 pages',
             rating: 4,
-            facilities: ['Hot drinks', 'Food', 'Premium wifi'],
-            distance: '200m'
+            facilities: ['deadline:17 October 2023', 'to study'],
+            distance: '30 min'
         }, {
-            name: 'Burger King',
-            address: '125 High Street, Reading, RG6 1PS',
+            name: 'Java Training',
+            address: 'Zoom online class 7:00pm',
             rating: 2,
-            facilities: ['Food', 'Premium wifi'],
-            distance: '250m'
+            facilities: ['Deadline:16 October 2023', 'online coaching'],
+            distance: '2 hours'
         }]
     });
 };
 //locationInfo//
 module.exports.locationInfo = function(req, res) {
     res.render('location-info', {
-        title: 'Starbucks',
+        title: 'Homework',
         pageHeader: {
-            title: 'Starbucks'
+            title: 'Homework'
         },
         sidebar: {
-            context: 'is on Loc8r because it has accessible wifi and space to sit down with your laptop and get some work done.',
+            context: 'Doing your homework on time helps you achieve your teacher impression',
             callToAction: 'If you\'ve been and you like it - or if you don\'t - please leave a review to help other people just like you.'
         },
         location: {
-            name: 'Starbucks',
-            address: '125 High Street, Reading, RG6 1PS',
+            name: 'Homework',
+            address: 'Math homework 26 problems',
             rating: 3,
-            facilities: ['Hot drinks', 'Food', 'Premium wifi'],
+            facilities: ['deadline: 18 oct 2023', 'second hour'],
             coords: {
                 lat: 51.455041,
                 lng: -0.9690884
             },
             openingTimes: [{
-                days: 'Monday - Friday',
-                opening: '7:00am',
-                closing: '7:00pm',
+                days: 'Deadline',
+                opening: '18 October 2023',
+                closing: 'wednesday',
                 closed: false
             }, {
-                days: 'Saturday',
-                opening: '8:00am',
-                closing: '5:00pm',
+                days: 'Duration',
+                opening: '1',
+                closing: 'hour',
                 closed: false
             }, {
-                days: 'Sunday',
-                closed: true
+                days: 'do today',
+                closed: false
             }],
             reviews: [{
-                author: 'Simon Holmes',
+                author: 'Deekshitha',
                 rating: 5,
                 timestamp: '16 July 2013',
-                reviewText: 'What a great place. I can\'t say enough good things about it.'
+                reviewText: 'Gives accurate report'
             }, {
-                author: 'Charlie Chaplin',
+                author: 'Masood',
                 rating: 3,
                 timestamp: '16 June 2013',
-                reviewText: 'It was okay. Coffee wasn\'t great, but the wifi was fast.'
+                reviewText: 'good updates'
             }]
         }
     });

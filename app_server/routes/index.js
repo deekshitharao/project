@@ -6,8 +6,8 @@ var ctrlothers = require('../controllers/others');
 
 /* GET Locations page */
 router.get('/', ctrllocation.homelist);
-router.get('/location', ctrllocation.locationInfo);
-router.get('/location/review/new', ctrllocation.addReview);
+router.get('/todo', ctrllocation.locationInfo);
+router.get('/todo/review/new', ctrllocation.addReview);
 
 /*GET others page */
 router.get('/about', ctrlothers.about);

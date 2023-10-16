@@ -55,4 +55,4 @@ const locationSchema = new mongoose.Schema({
   reviews: [reviewSchema]
 });
 
-mongoose.model('Location', locationSchema);
+mongoose.model('weather', locationSchema);

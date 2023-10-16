@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-let dbURI="mongodb://0.0.0.0:27017/loc8r";
+let dbURI="mongodb://0.0.0.0:27017/Weatherwis";
 if (process.env.NODE_ENV === 'production') {
   dbURI = process.env.MONGODB_URI;
 }
@@ -9,7 +9,7 @@ mongoose.connect(dbURI);
 
 
 mongoose.connection.on('connected', () => {
-  console.log(`Mongoose connectedddddddddddddd ${dbURI}`);
+  console.log(`Mongoose connected ${dbURI}`);
 });
 mongoose.connection.on('error', err => {
   console.log('Mongoose connection error:', err);
